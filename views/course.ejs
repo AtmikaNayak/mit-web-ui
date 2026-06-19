@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= data.title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav>
+        <h3>MIT</h3>
+        <h3><a href="/">Home</a></h3>
+        <h3><a href="/admissions">Admissions</a></h3>
+        <h3><a href="/contact">Contact</a></h3>
+    </nav>
+    <div class="courses">
+        <h1><%= data.title %></h1>
+        <img src="/<%= data.image %>">
+        <p><%= data.desc %></p>
+        <p><%= data.fees %></p>
+    </div>
+</body>
+</html>
