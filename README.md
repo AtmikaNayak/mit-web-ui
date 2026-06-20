@@ -1,137 +1,67 @@
 # MIT Web UI
 
-A simple multi-page college website built using Node.js, Express.js, and EJS. The project provides a basic university portal featuring a homepage, admissions section, contact page, and course information pages for different academic streams.
+A frontend university website inspired by the MIT website. The project showcases admissions information, academic programs, contact forms, featured news, events, and department pages through a clean multi-page interface.
 
 ## Features
 
-* Multi-page website structure
-* Home page with university overview
-* Admissions page with available streams
-* Contact form interface
-* Course pages for Engineering, Commerce, and Science
-* Responsive navigation bar
-* Static asset management using Express
-* Server-side rendering with EJS
-
----
+- Homepage with featured news and events
+- Admissions page
+- Contact form
+- Course information pages
+- Responsive layout
+- Multi-page navigation
 
 ## Tech Stack
 
-### Frontend
-
-* HTML5
-* CSS3
-* EJS
-
-### Backend
-
-* Node.js
-* Express.js
-
----
-
-## Screenshot
-
-### Home Page
-
-![MIT Web UI](public/home.png)
-
-### Admissions Page
-
-![Admissions](public/course.png)
-
-### Contact Page
-
-![Contact](public/contact.png)
-
----
+- HTML
+- CSS
 
 ## Project Structure
 
 ```text
-mit-web-ui/
-├── app.js
-├── package.json
-├── package-lock.json
-├── README.md
-├── pages
-│   ├── home.html
-│   ├── admissions.html
-│   └── contact.html
-├── public
-│   ├── commerce.webp
-│   ├── contact.png
-│   ├── course.png
-│   ├── courses.png
-│   ├── engineering.webp
-│   ├── hero.jpg
-│   ├── home.png
-│   ├── science.webp
-│   └── style.css
-└── views
-    └── course.ejs
+mitweb/
+├── pages/
+├── images/
+├── style.css
+└── index.html
 ```
 
----
-
-## Routes
-
-| Method | Route               | Description                |
-| ------ | ------------------- | -------------------------- |
-| GET    | /                   | Home page                  |
-| GET    | /admissions         | Admissions page            |
-| GET    | /contact            | Contact page               |
-| GET    | /course/engineering | Engineering course details |
-| GET    | /course/commerce    | Commerce course details    |
-| GET    | /course/science     | Science course details     |
-
----
-
-## Application Workflow
-
-### Home Page
-
-* Displays the university overview.
-* Highlights featured news, events, and important links.
-
-### Admissions
-
-* Lists the available academic streams.
-* Allows users to navigate to stream-specific course pages.
-
-### Course Pages
-
-* Dynamic course page rendered through EJS.
-* Displays information related to the selected stream.
-
-### Contact Page
-
-* Provides a form for prospective students and visitors to submit inquiries.
-
----
-
-## Installation
+## Running Locally
 
 ```bash
 git clone <repository-url>
 
-cd mit-web-ui
-
-npm install
-
-npm start
+cd mitweb
 ```
 
-Open:
+Open `index.html` in your browser.
 
-```text
-http://localhost:5000
-```
+## Running Tests
 
----
+No automated tests are configured for this project.
 
-## Author
+## Integration Notes
 
-### Atmika Nayak
+This project can be extended with backend support for admissions management, student registration, and dynamic content management.
 
-GitHub: https://github.com/AtmikaNayak
+## Visuals
+
+### Homepage
+
+![Homepage](public/home.png)
+
+### Courses
+
+![Courses](public/courses.png)
+
+### Course
+
+![Course](public/course.png)
+
+### Contact
+
+![Contact](public/contact.png)
+
+## Additional Resources
+
+- MIT Official Website: https://www.mit.edu/
